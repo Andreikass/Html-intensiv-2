@@ -1,0 +1,204 @@
+doctype html
+html(lang="ru")
+	include include/head.pug
+	+head('интенсив бородинский')
+
+	body
+		header.page-header
+			a.page-header__logo(href="")
+				img.page-header__logo-image(src="images/logotype-mobile.png" width="226px" height="30px" alt="Барбершоп Бородинский")
+
+			nav.main-nav
+				button.main-nav__toggle(type="button") Открыть меню
+
+				div.main-nav__wrapper
+					ul.main-nav__list.site-list
+						li.site-list__item.site-list__item-active
+							a.link(href="") Главная
+
+						li.site-list__item
+							a(href="photo.html") Наши работы
+
+
+						li.site-list__item
+							a(href="form.html") Записаться
+
+						
+						li.site-list__item
+							a(href="#") Контакты
+
+
+						li.site-list__item
+							a(href="#") HTML ACADEMY
+
+
+					ul.main-nav__list.user-list
+						li.user-list__item
+							a.user-list__login(href="login.html") Войти
+
+		main.page-main
+			h1.visually-hidden Барбершоп «Бородинский» - истинно мужская классика
+
+			section.stats
+
+				header.stats__header
+					h2.visually-hidden Статистика Барбершопа
+					b.stats__slogan Стрижка у нас это выгодно!
+
+					p.stats__intro Мужская стрижка требует точного подхода. Обратимся к статистике:
+
+					small.stats__legend.stats__legend--top
+						sup *
+						|- приведенные данные ложь
+
+				table.stats__list
+					tr
+						td.stat__value 1 500 
+							sup *
+
+						td.stats__field рублей
+							
+							|вложений
+					tr
+						td.stat__value 7 200
+						td.stats__field секунд
+							br 
+							|времени мастера
+
+					tr
+						td.stat__value 90 000
+						td.stats__field постриженных
+							br
+							|волос
+
+					tr
+						td.stat__value 500 000
+							sup *
+						td.stats__field лайков
+							br
+							|и комплиментов
+
+				small.stats__legend.stats__legend--bottopm
+					sup * 
+				|- приведенные данные ложь
+
+			section.advantages
+				div.advantages__wrapper.slider
+					h2.visually-hidden Наши преимущества
+
+					ul.advantages__list.slider__list
+						li.advantages__item.advantages__item--fast.slider__item
+							h3.advantages__title БЫСТРО
+
+							p.advantages__description Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки.
+
+						li.advantages__item.advantages__item--cool.slider__item
+							h3.advantages__title КРУТО
+
+							p.advantages__description Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино. Во всяком случае внешне.
+
+
+						li.advantages__item.advantages__item--price.slider__item
+							h3.advantages__title ДОРОГО
+
+							p.advantages__description Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?
+
+					p.advantages__toggles.slider__toggles
+						button.slider__toogle(type="button") 1
+						button.slider__toogle(type="button") 2
+						button.slider__toogle(type="button") 3
+
+			section.news
+				div.news__wrapper
+					h2.news__title Новости и акции
+
+					ul.news__lis
+						li.news__item
+							time.news__date(datetime="2017-09-29")
+								b.news__day 29
+							|сент
+							p.news__text Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.
+
+
+						li.news__item
+							time.news__date(datetime="2017-09-19")
+								b.news__day 19
+							|сент
+
+							p.news__text В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды.
+
+						li.news__item
+							time.news__date(datetime="2017-09-09")
+								b.news__day 9
+							|сент
+							p.news__text Всё дорожает, ф наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!
+
+					a.news__to-all.button(href="#") Показать все
+			
+			section.reviews
+				div.reviews__wrapper.slider
+					h2.reviews__title Отзывы о нас
+
+					a(href="#").reviews__write.button Оставаить свой
+					div.reviews__list.slider__list
+						blockquote.reviews__item.slider__item
+							p.reviews__author-picture
+								img(src="images/picture-travis.png" width="50" height="33" alt="Фото Трэвиса Баркера").reviews__author-image
+
+							cite.reviews__author-name Трэвис Баркер
+
+							p.reviews__atext Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+
+						blockquote.reviews__item.slider__item
+							p.reviews__author-picture
+								img(src="images/picture-travis.png" width="50" height="33" alt="Фото Джона Смита").reviews__author-image
+
+							cite.reviews__author-name Джон смит
+
+							p.reviews__atext Отличную стрижку мне сделали ребята
+
+						blockquote.reviews__item.slider__item
+							p.reviews__author-picture
+								img(src="images/picture-travis.png" width="50" height="33" alt="Фото Ивана Бородайло").reviews__author-image
+							cite.reviews__author-name Иван Бородайло
+
+							p.reviews__atext В Бородинском ваша борода в надежных руках
+
+						button.reviews__prev(type="button") Предыдущий отзыв
+
+						button.reviews__next(type="button") Следующий отзыв
+
+					p.reviews__toggles.slider__toggles
+						button.slider__toogle(type="button") 1
+						button.slider__toogle(type="button") 2
+						button.slider__toogle(type="button") 3
+
+		footer.page-footer
+			div.page-footer__wrapper
+				div.page-footer__contacts.contacts
+					b.contacts__title Барбершоп "Бородинский"
+
+					p.contacts__text г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+						a(href="tel:+78125556666").contacts__phone
+							span.contacts__phone-mobile Тел.:
+						|+7 (812) 555-66-66
+
+				div.page-footer__social.social
+					b.social__title Давайте дружить!
+
+					ul.social__list
+						li.social__item
+							a(href="https://vk.com/htmlacademy").social__link.social__link--vkontakte Мы в Вконтакте
+
+						li.social__item
+							a(href="https://www.facebook.com/htmlacademy").social__link.social__link--facebook Мы в Фейсбуке
+
+						li.social__item
+							a(href="https://www.instagram.com/htmlacademy").social__link.social__link--instagram Мы в Инстаграме
+
+				div.page-footer__copyright.copyright
+					b.copyright__text Разработано:
+					a(href="http://htmlacademy.ru/intensive/adaprive").button.copyright__link HTML ACADEMY
+
+		include ../blocks/img/img.pug
+		include include/script.pug

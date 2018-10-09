@@ -2,15 +2,24 @@ body {
 	/* 1 Positioning */ 
 
 	/* 2 Block model */ 
+	min-width: 320px;
 	padding: 0;
 	margin: 0;
 
 	/* 3 Typography */
-
+	font-size: 18px;
+	line-height: 27px;
+	color: #f7f4f1;
+	font-style: normal;
 	/* 4 Visual */ 
-	overflow-x: hidden;
+	background-color: $bg-darkgrey;
 
 	/* 5 Animation*/ 
  
 	/* 6 Misc */
+}
+img {
+	/* 2 Block model */ 
+	max-width: 100%;
+	height: auto;
 }

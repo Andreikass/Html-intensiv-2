@@ -1,4 +1,7 @@
 @import 'fonts';
 @import 'variables';
+@import 'mixin';
 @import 'base';
 
+@import '../blocks/page-header/page-header';
+@import '../blocks/main-nav/main-nav';

@@ -7,6 +7,7 @@ body {
 	margin: 0;
 
 	/* 3 Typography */
+	font-family: $font-main;
 	font-size: 18px;
 	line-height: 27px;
 	color: #f7f4f1;
@@ -22,4 +23,21 @@ img {
 	/* 2 Block model */ 
 	max-width: 100%;
 	height: auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

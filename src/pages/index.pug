@@ -8,13 +8,13 @@ html(lang="ru")
 			a.page-header__logo(href="")
 				img.page-header__logo-image(src="images/logotype-mobile.png" width="226px" height="30px" alt="Барбершоп Бородинский")
 
-			nav.main-nav.main-nav--closed
+			nav.main-nav.main-nav--closed.main-nav--nojs
 				button.main-nav__toggle(type="button")
 					span.visually-hidden Открыть меню
 
 				div.main-nav__wrapper
 					ul.main-nav__list.site-list
-						li.site-list__item.site-list__item-active
+						li.site-list__item.site-list__item--active
 							a Главная
 
 						li.site-list__item
@@ -80,9 +80,9 @@ html(lang="ru")
 							br
 							|и комплиментов
 
-				small.stats__legend.stats__legend--bottopm
+				small.stats__legend.stats__legend--bottom
 					sup * 
-				|- приведенные данные ложь
+					|- приведенные данные ложь
 
 			section.advantages
 				div.advantages__wrapper.slider

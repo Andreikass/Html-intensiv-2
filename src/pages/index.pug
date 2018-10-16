@@ -6,7 +6,10 @@ html(lang="ru")
 	body
 		header.page-header
 			a.page-header__logo(href="")
-				img.page-header__logo-image(src="images/logotype-mobile.png" width="226px" height="30px" alt="Барбершоп Бородинский")
+				picture
+					source(media="(min-width: 1200px)" srcset="images/logotype-desktop@1x.png")
+					source(media="(min-width: 768px)" srcset="images/logotype-tablet.png")
+					img.page-header__logo-image(src="images/logotype-mobile.png" width="226px" height="30px" alt="Барбершоп Бородинский")
 
 			nav.main-nav.main-nav--closed.main-nav--nojs
 				button.main-nav__toggle(type="button")

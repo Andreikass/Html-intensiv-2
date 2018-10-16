@@ -11,7 +11,11 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
     </head>
   <body>
-    <header class="page-header"><a class="page-header__logo" href=""><img class="page-header__logo-image" src="images/logotype-mobile.png" width="226px" height="30px" alt="Барбершоп Бородинский"></a>
+    <header class="page-header"><a class="page-header__logo" href="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="images/logotype-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="images/logotype-tablet.png"><img class="page-header__logo-image" src="images/logotype-mobile.png" width="226px" height="30px" alt="Барбершоп Бородинский">
+        </picture></a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
